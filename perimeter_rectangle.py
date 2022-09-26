@@ -23,3 +23,6 @@ height = 7
 perimeter = (2*width) + (2*height)
 
 print('The perimeter of a rectangle of width=', width , "and height =", height, "is :" , perimeter)
+
+area = width * height
+print("The area of a rectangle with sides:", width, "and", height, "is: ", area, "inches.")
