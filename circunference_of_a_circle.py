@@ -17,9 +17,13 @@ from math import radians
 
 π = 3.14
 radius = 8
-area = 2 * π * radius 
-print("The area of a circle with radius of", radius, "inches is =" , area, "square inches.")
+circunference = 2 * π * radius 
+print("The circunference of a circle with radius of", radius, "inches is =" , circunference, "inches.")
 
+
+area = 2 * (π**2)
+
+print("And its area is:", area, 'square inches.')
 ###################################################
 # Expected output
 # Student should look at the following comments and compare to printed output.
