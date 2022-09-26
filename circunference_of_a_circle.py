@@ -21,7 +21,7 @@ circunference = 2 * π * radius
 print("The circunference of a circle with radius of", radius, "inches is =" , circunference, "inches.")
 
 
-area = 2 * (π**2)
+area = π * (radius**2)
 
 print("And its area is:", area, 'square inches.')
 ###################################################
