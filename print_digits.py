@@ -12,10 +12,12 @@ Template - Compute and print tens and ones digit of an integer in [0,100).
 
 #the module 10 of  a number is its one digit
 #34 % 10 = 4
-def print_digits(number):
-    
-    r = number // 10
-    m = number %10
+
+def print_digits():
+    number = input("Enter your number from 1 to 99: ")
+    print("Your number is:", number)
+    r = int(number) // 10
+    m = int(number) %10
     print("When using the number: " + str(number) + ", the tens digit is: " + str(r) + " and the ones digit is: " + str(m) +".")
 
 
@@ -27,9 +29,8 @@ def print_digits(number):
 # Tests
 # Student should not change this code.
     
-print_digits(42)
-print_digits(99)
-print_digits(5)
+print_digits()
+
 
 
 ###################################################
