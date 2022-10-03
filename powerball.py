@@ -7,9 +7,27 @@ import random
 ###################################################
 # Powerball function
 # Student should enter function on the next lines.
+def powerball():
 
-name = input("Enter your name: ")
-print("Hello", name + "!")
+    numbers = random.sample(range(1,60), 6)
+    
+    theFive = numbers
+   
+    number1          = theFive[0]
+    number2          = theFive[1]
+    number3          = theFive[2]
+    number4          = theFive[3]
+    number5          = theFive[4]
+
+    powerball_number = random.sample(range(1,36), 1)
+
+    print("\nYour numbers are: " +  str(number1) + ", "+  str(number2) +  ", "+ str(number3) +  ", "+ str(number4) + " and "+   str(number5) + ".")
+
+    print("Your Power Ball number is: " + str(powerball_number[0]) + ".\n")
+   
+    
+
+    
 
     
 ###################################################
@@ -19,6 +37,7 @@ print("Hello", name + "!")
 powerball()
 powerball()
 powerball()
+
 
 ###################################################################
 # Some sample output appears below.  Note that numbers need not match
