@@ -10,11 +10,11 @@ Template - Compute the area of a triangle (using Heron's formula),
 
 # Heron's formula states that the area of a triangle whose sides have lengths a, b, and c is
 ###################################################
-# Distance formula
+# coordenates:
 x_0, y_0 = 2, 2
 x_1, y_1 = 5, 6
 x_2, y_2 = 7, 2
-# distance x0 > x1
+
 def point_distance_a_to_b(x_0, y_0, x_1, y_1):
     """
     Returns the Euclidian distance between two points (x0,y0) and (x1,y1).
@@ -28,7 +28,7 @@ print("The distance from (" + str(x_0) + ", " + str(y_0) + ") to (" +
 # distance x1 > x2
 def point_distance_b_to_c(x_1, y_1, x_2, y_2):
     """
-    Returns the Euclidian distance between two points (x0,y0) and (x1,y1).
+    Returns the Euclidian distance between two points (x_1, y_1 and (x_2, y_2).
     """
     
     return ((x_1 - x_2) ** 2 + (y_1 - y_2) ** 2) ** 0.5
@@ -41,7 +41,7 @@ print("The distance from (" + str(x_1) + ", " + str(y_1) + ") to (" +
 # distance x2 > x0
 def point_distance_c_to_a(x_2, y_2, x_0, y_0):
     """
-    Returns the Euclidian distance between two points (x0,y0) and (x1,y1).
+    Returns the Euclidian distance between two points (x_2, y_2) and (x_0, y_0).
     """
     
     return ((x_2 - x_0) ** 2 + (y_2 - y_0) ** 2) ** 0.5
