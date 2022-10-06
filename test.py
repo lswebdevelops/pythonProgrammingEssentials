@@ -1,12 +1,16 @@
-def future_value(present_value, annual_rate, periods_per_year, years):
+def nand(bool1, bool2):
     """
-    Input: the numbers present_value, annual_rate, periods_per_year, years
-    Output: future value based on formula given in question
+    Take two Boolean values bool1 and bool2
+    and return the specified Boolean values
     """
-    rate_per_period = annual_rate / periods_per_year
-    periods = periods_per_year * years
-
-    # Put your code here.
     
+    if bool1:
+        if bool2:
+            return False
+        else:
+            return True
+    else:
+        return True
 
-print("$1000 at 2% compounded daily for 4 years yields $", future_value(1000, .02, 365, 4))
+
+nand(False, True)
