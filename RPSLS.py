@@ -109,7 +109,7 @@ while True:
         """
         choices = ['rock', 'paper', 'scissors', 'lizard','Spock' ]
     
-        # player = player_choice
+        # creating a while loop so the user will be asked if wants to continue
         player = None
         while player not in choices:
             player = input("'rock', 'paper', 'scissors', 'lizard' or 'Spock'?: ")
@@ -249,19 +249,3 @@ while True:
     if play_again != "yes":
         break
 
-
-    
-# test your code
-# rpsls()
-# rpsls()
-# rpsls()
-# rpsls()
-# rpsls()
-
-# rpsls("rock")
-# rpsls("Spock")
-# rpsls("paper")
-# rpsls("lizard")
-# rpsls("scissors")
-
-# always remember to check your completed program against the grading rubric
