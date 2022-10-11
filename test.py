@@ -1,16 +1,17 @@
-def nand(bool1, bool2):
-    """
-    Take two Boolean values bool1 and bool2
-    and return the specified Boolean values
-    """
-    
-    if bool1:
-        if bool2:
-            return False
-        else:
-            return True
-    else:
-        return True
+x = 0
+y = 0
+
+def myfunc():
+  global x, y
+  x = x + 1
+  y = y + 1
+
+  
+
+myfunc()
+print(x, y)
+myfunc()
+print(x, y)
 
 
-nand(False, True)
+# print("Python is " + x)
