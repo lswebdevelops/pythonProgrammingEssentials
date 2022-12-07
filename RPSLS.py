@@ -3,7 +3,7 @@ Week 4 practice project template for Python Programming Essentials
 Rock-paper-scissors-lizard-Spock
 """
 import random
-from secrets import choice
+
 # the project is saved under:
 # https://py3.codeskulptor.org/#user307_Kj9ypN0gVE_1.py
 
@@ -28,8 +28,7 @@ def name_to_number(name):
     # convert name to number using if/elif/else
     # don't forget to return the result!
     
-    pass
-
+    
     if name == "rock":
         return 0
     elif name == "Spock":
@@ -66,7 +65,7 @@ def number_to_name(number):
     Given integer number (0, 1, 2, 3, or 4)
     corresponding name from video
     """
-    pass
+    
     if number == 0:
         return "rock"
     elif number == 1:
@@ -98,11 +97,11 @@ def number_to_name(number):
 # paper
 # lizard
 # scissors
-player_count = 0
-computer_count = 0
+PLAYER_COUNT = 0
+COMPUTER_COUNT = 0
 while True:
     def rpsls():
-        global player_count , computer_count
+        global PLAYER_COUNT , COMPUTER_COUNT
         """
         Given string player_choice, play a game of RPSLS 
         and print results to console
@@ -136,109 +135,109 @@ while True:
             
         if player == computer:
             print("\ntie\n")
-            print("Computer count: ", computer_count)
-            print("Player count:", player_count)
+            print("Computer count: ", COMPUTER_COUNT)
+            print("Player count:", PLAYER_COUNT)
         elif player == 'rock' and computer == 'paper':
-            computer_count  = computer_count + 1
+            COMPUTER_COUNT  = COMPUTER_COUNT + 1
             print("\nComputer wins\n")
-            print("Computer count: ", computer_count)
-            print("Player count:", player_count)
+            print("Computer count: ", COMPUTER_COUNT)
+            print("Player count:", PLAYER_COUNT)
         elif player == 'paper' and computer == 'rock':
             print("\nPlayer wins\n")
-            player_count = player_count + 1
-            print("Computer count: ", computer_count)
-            print("Player count:", player_count)
+            PLAYER_COUNT = PLAYER_COUNT + 1
+            print("Computer count: ", COMPUTER_COUNT)
+            print("Player count:", PLAYER_COUNT)
         elif player == 'paper' and computer == 'Spock':
             print("\nPlayer wins\n")
-            player_count = player_count + 1        
-            print("Computer count: ", computer_count)
-            print("Player count:", player_count)
+            PLAYER_COUNT = PLAYER_COUNT + 1        
+            print("Computer count: ", COMPUTER_COUNT)
+            print("Player count:", PLAYER_COUNT)
         elif player == 'paper' and computer == 'scissors':
             print("\nComputer wins\n")
-            computer_count  = computer_count + 1 
-            print("Computer count: ", computer_count)
-            print("Player count:", player_count)
+            COMPUTER_COUNT  = COMPUTER_COUNT + 1 
+            print("Computer count: ", COMPUTER_COUNT)
+            print("Player count:", PLAYER_COUNT)
         elif player == 'paper' and computer == 'lizard':
             print("\nComputer wins\n")
-            computer_count  = computer_count + 1        
-            print("Computer count: ", computer_count)
-            print("Player count:", player_count)
+            COMPUTER_COUNT  = COMPUTER_COUNT + 1        
+            print("Computer count: ", COMPUTER_COUNT)
+            print("Player count:", PLAYER_COUNT)
         elif player == 'rock' and computer == 'lizard':
             print("\nPlayer wins\n")
-            player_count = player_count + 1        
-            print("Computer count: ", computer_count)
-            print("Player count:", player_count)
+            PLAYER_COUNT = PLAYER_COUNT + 1        
+            print("Computer count: ", COMPUTER_COUNT)
+            print("Player count:", PLAYER_COUNT)
         elif player == 'rock' and computer == 'Spock':
             print("\nComputer wins\n")
-            computer_count  = computer_count + 1        
-            print("Computer count: ", computer_count)
-            print("Player count:", player_count)
+            COMPUTER_COUNT  = COMPUTER_COUNT + 1        
+            print("Computer count: ", COMPUTER_COUNT)
+            print("Player count:", PLAYER_COUNT)
         elif player == 'rock' and computer == 'scissors':
             print("\nPlayer wins\n")
-            player_count = player_count + 1        
-            print("Computer count: ", computer_count)
-            print("Player count:", player_count)
+            PLAYER_COUNT = PLAYER_COUNT + 1        
+            print("Computer count: ", COMPUTER_COUNT)
+            print("Player count:", PLAYER_COUNT)
         elif player == 'Spock' and computer == 'scissors':
             print("\nComputer wins\n")
-            computer_count  = computer_count + 1        
-            print("Computer count: ", computer_count)
-            print("Player count:", player_count)
+            COMPUTER_COUNT  = COMPUTER_COUNT + 1        
+            print("Computer count: ", COMPUTER_COUNT)
+            print("Player count:", PLAYER_COUNT)
         elif player == 'Spock' and computer == 'lizard':
             print("\nComputer wins\n")
-            computer_count  = computer_count + 1        
-            print("Computer count: ", computer_count)
-            print("Player count:", player_count)
+            COMPUTER_COUNT  = COMPUTER_COUNT + 1        
+            print("Computer count: ", COMPUTER_COUNT)
+            print("Player count:", PLAYER_COUNT)
         elif player == 'lizard' and computer == 'scissors':
             print("\nComputer wins\n")
-            computer_count  = computer_count + 1
-            print("Computer count: ", computer_count)
-            print("Player count:", player_count)
+            COMPUTER_COUNT  = COMPUTER_COUNT + 1
+            print("Computer count: ", COMPUTER_COUNT)
+            print("Player count:", PLAYER_COUNT)
         elif player == 'scissors' and computer == 'Spock':
             print("\nComputer wins\n")
-            computer_count  = computer_count + 1
-            print("Computer count: ", computer_count)
-            print("Player count:", player_count)
+            COMPUTER_COUNT  = COMPUTER_COUNT + 1
+            print("Computer count: ", COMPUTER_COUNT)
+            print("Player count:", PLAYER_COUNT)
         elif player == 'scissors' and computer == 'paper':
             print("\nPlayer wins\n")
-            player_count = player_count + 1
-            print("Computer count: ", computer_count)
-            print("Player count:", player_count)
+            PLAYER_COUNT = PLAYER_COUNT + 1
+            print("Computer count: ", COMPUTER_COUNT)
+            print("Player count:", PLAYER_COUNT)
         elif player == 'scissors' and computer == 'rock':
             print("\nComputer wins\n")
-            computer_count  = computer_count + 1
-            print("Computer count: ", computer_count)
-            print("Player count:", player_count)
+            COMPUTER_COUNT  = COMPUTER_COUNT + 1
+            print("Computer count: ", COMPUTER_COUNT)
+            print("Player count:", PLAYER_COUNT)
         elif player == 'scissors' and computer == 'lizard':
             print("\nPlayer wins\n")
-            player_count = player_count + 1
-            print("Computer count: ", computer_count)
-            print("Player count:", player_count)
+            PLAYER_COUNT = PLAYER_COUNT + 1
+            print("Computer count: ", COMPUTER_COUNT)
+            print("Player count:", PLAYER_COUNT)
         elif player == 'lizard' and computer == 'paper':
             print("\nPlayer wins\n")
-            player_count = player_count + 1
-            print("Computer count: ", computer_count)
-            print("Player count:", player_count)
+            PLAYER_COUNT = PLAYER_COUNT + 1
+            print("Computer count: ", COMPUTER_COUNT)
+            print("Player count:", PLAYER_COUNT)
         elif player == 'lizard' and computer == 'rock':
             print("\nComputer wins\n")
-            computer_count  = computer_count + 1
-            print("Computer count: ", computer_count)
-            print("Player count:", player_count)
+            COMPUTER_COUNT  = COMPUTER_COUNT + 1
+            print("Computer count: ", COMPUTER_COUNT)
+            print("Player count:", PLAYER_COUNT)
         elif player == 'lizard' and computer == 'Spock':
             print("\nPlayer wins\n")
-            player_count = player_count + 1
-            print("Computer count: ", computer_count)
-            print("Player count:", player_count)
+            PLAYER_COUNT = PLAYER_COUNT + 1
+            print("Computer count: ", COMPUTER_COUNT)
+            print("Player count:", PLAYER_COUNT)
         elif player == 'Spock' and computer == 'paper':
             print("\nComputer wins\n")
-            computer_count  = computer_count + 1        
-            print("Computer count: ", computer_count)
-            print("Player count:", player_count)
+            COMPUTER_COUNT  = COMPUTER_COUNT + 1        
+            print("Computer count: ", COMPUTER_COUNT)
+            print("Player count:", PLAYER_COUNT)
         elif player == 'Spock' and computer == 'rock':
             print("\nPlayer wins\n")
-            player_count = player_count + 1       
-            print("Computer count: ", computer_count)
-            print("Player count:", player_count)
-        pass
+            PLAYER_COUNT = PLAYER_COUNT + 1       
+            print("Computer count: ", COMPUTER_COUNT)
+            print("Player count:", PLAYER_COUNT)
+        
     rpsls()
     rpsls()
     rpsls()

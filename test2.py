@@ -1,4 +1,19 @@
-x = input("\nType a number for x\n")
+import datetime
 
-f= ((-5*int(x))**5) + ((67*int(x))**2) - 47
-print(f)
+
+def compares_date(year, month, day):
+   
+    todays_date = datetime.date.today()
+    todays_year = todays_date.year
+    todays_month = todays_date.month
+    todays_day = todays_date.day
+    #checking the given date
+  
+   
+
+
+
+
+compares_date(2020,6,31)
+
+
